@@ -3,9 +3,18 @@
 
 Console.Write("Please enter the number from 1 to 7: ");
 int day = Convert.ToInt32(Console.ReadLine());
-bool CheckDay(int num)
+if (day >= 1 && day <= 7)
 {
-    return num == 6 || num == 7;
+    if (day == 6 || day == 7)
+    {
+        Console.WriteLine("Yes");
+    } 
+    else
+    {
+        Console.WriteLine("No");
+    }
 }
-
-Console.WriteLine(CheckDay(day));
+else
+{
+    Console.WriteLine("Number is out of the range!!!");
+}
